@@ -1,13 +1,16 @@
 .square {
+  width: 10px;
+  height: 10px;
+}
+
+.color {
   background-color: coral;
-  width: 30px;
-  height: 30px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px;
-  grid-template-rows: 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px 1px; 
-  column-gap: 30px;
-  row-gap: 30px;
+  grid-template-columns: repeat(128,1px);
+  grid-template-rows: repeat(128,1px); 
+  column-gap: 10px;
+  row-gap: 10px;
 }
